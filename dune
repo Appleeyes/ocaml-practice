@@ -1,0 +1,11 @@
+(library
+ (name ex)
+ (libraries ounit2)
+)
+
+(executable
+ (name test)
+ (libraries ounit2 ex)
+)
+
+(include_subdirs qualified)
