@@ -1,0 +1,13 @@
+{
+    "name": "OCaml Development Environment",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "extensions": [
+            "ocamllabs.ocaml-platform",
+            "d-editor.ocaml"
+          ]
+    },
+    "postCreateCommand": "opam init --auto-setup && opam update && opam switch create . ocaml-system.4.12.0",
+    "remoteUser": "ocamluser"
+  }
+  
